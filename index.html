@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" sizes="10" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Tip calculator app</title>
+
+
+</head>
+
+<body>
+    <div class="full-container">
+        <div class="logo"><img src="images/logo.svg" alt="logo"></div>
+        <div class="container">
+            <div class="calculat">
+                <div class="bill">
+                    <span>Bill</span>
+                    <input type="number" name="bill" id="bill" placeholder="0">
+                    <img src="images/icon-dollar.svg" alt="icon dollar">
+                </div>
+                <div class="tips">
+                    <span>Select Tip %</span>
+                    <div class="tips-input" id="tipsButtons">
+                        <button>5%</button>
+                        <button>10%</button>
+                        <button>15%</button>
+                        <button>25%</button>
+                        <button>50%</button>
+                        <input type="number" name="custom" id="" placeholder="Custom">
+                    </div>
+                </div>
+                <div class="num-people">
+                    <div>
+                        <span>Number of People </span>
+                        <span class="error" id="error">Can't be zero</span>
+                    </div>
+                    <input name="people" type="number" id="people" placeholder="0">
+                    <img src="images/icon-person.svg" alt="parson dollar">
+                </div>
+            </div>
+            <div class="display">
+                <div class="amount">
+                    <div class="first">
+                        <h3>Tip Amount</h3>
+                        <span> / person</span>
+                    </div>
+                    <div class="second">
+                        <i><img src="images/icon-dollar.svg" alt="" srcset=""></i>
+                        <p id="amount">00.00</p>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="first">
+                        <h3>Total</h3>
+                        <span> / person </span>
+                    </div>
+                    <div class="second">
+                        <i><img src="images/icon-dollar.svg" alt="" srcset=""></i>
+                        <p id="total">00.00</p>
+                    </div>
+                </div>
+                <button class="reset" id="resetButton" onclick="DisplayError()">Reset</button>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style> -->
+<!-- 
+        
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
